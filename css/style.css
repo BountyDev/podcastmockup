@@ -139,12 +139,8 @@ html {
 }
 
 .stream {
-  background_color: white;
-  width: 20%;
-  height: 10%;
-  top: 50%;
-  left: 50%;  
-  position: relative;
+  background-color: white;
+  height: 2%;
 }
 
 /* Media Queries */
