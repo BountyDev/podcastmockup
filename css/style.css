@@ -63,16 +63,16 @@ html {
 .arrow {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
-  width: 40px;
-  height: 40px;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
   cursor: pointer;
   z-index: 1;
 }
 
 .arrow img {
-  width: 200%;
-  height: 200%;
+  width: 100%;
+  height: 100%;
 }
 
 .arrow-left {
@@ -98,6 +98,26 @@ html {
   opacity: 1;
 }
 
+.info {
+  font-family: "cambriafnt";
+  text-align: center;
+}
+
+.infotitle {
+  font-size: 48px;
+  font-weight: bold;
+  font-style: italic;
+  color: #ffffff; /* White color */
+  text-shadow: 0 0 10px #ffffff; /* Neon glow effect */
+}
+
+.infotext {
+  font-size: 24px;
+  font-style: italic;
+  color: #ffffff; /* White color */
+  text-shadow: 0 0 10px #ffffff; /* Neon glow effect */
+}
+
 /* Media Queries */
 @media only screen and (max-width: 600px) {
   /* Center arrows on mobile devices */
@@ -107,5 +127,13 @@ html {
 
   .arrow-right {
     right: 15%;
+  }
+
+  .infotext {
+    font-size: 18px;
+  }
+
+  .infotitle {
+    font-size: 36px;
   }
 }
