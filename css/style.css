@@ -5,11 +5,11 @@ body {
   background-size: cover;
   background-color: black;
   margin: 0;
-  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  -ms-overflow-style: none;
   width: 100%;
   overflow-x: hidden;
   position: relative;
-  height: 100vh; /* Set the body height to 100% of the viewport height */
+  height: 100vh;
 }
 
 html {
@@ -39,17 +39,17 @@ html {
 
 .border {
   display: flex;
-  justify-content: center; /* Horizontally center the logo */
-  align-items: center; /* Vertically center the logo */
+  justify-content: center;
+  align-items: center;
   background-color: black;
   height: 13%;
 }
 
 .border .logo {
   margin-top: 0.2%;
-  width: 140%; /* Set the width to 100% of the container */
-  height: 140%; /* Set the height to 100% of the container */
-  object-fit: contain; /* Maintain aspect ratio without stretching */
+  width: 140%;
+  height: 140%;
+  object-fit: contain;
 }
 
 .slideshow-container {
@@ -58,10 +58,6 @@ html {
   position: relative;
   margin: auto;
   overflow: hidden;
-}
-.slideshow-container {
-  position: relative;
-  /* ...existing styles... */
 }
 
 .arrow {
@@ -95,9 +91,19 @@ html {
   height: 100%;
   object-fit: cover;
   opacity: 0;
-  transition: opacity 1s ease-in-out; /* Add transition effect */
+  transition: opacity 1s ease-in-out;
 }
 
 .slideshow-image.active {
   opacity: 1;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+  /* Center arrows on mobile devices */
+  .arrow-left,
+  .arrow-right {
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
