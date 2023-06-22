@@ -3,7 +3,6 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/style.css"></link>
-    <script src="script.js"></script>
   </head>
   <body>
     <div class = "toppadding"></div>
@@ -11,5 +10,21 @@
       <img class = "logo" src = "images/icon.png">
     </div>
     <div class = "toppadding2"></div>
+    <div class="slideshow-container">
+      <div class="arrow arrow-left" onclick="previousSlide()">
+        <img src="images/slideshow_left.png" alt="Left Arrow">
+      </div>
+
+      <img class="slideshow-image active" src="images/image1.png" alt="Image 1">
+      <img class="slideshow-image" src="images/image2.png" alt="Image 2">
+      <img class="slideshow-image" src="images/image3.png" alt="Image 3">
+
+      <div class="arrow arrow-right" onclick="nextSlide()">
+        <img src="images/slideshow_right.png" alt="Right Arrow">
+      </div>
+    </div>
+    <div class = "toppadding3"></div>
+
+     <script src="javascript/slideshow.js"></script>
   </body>
 </html>
