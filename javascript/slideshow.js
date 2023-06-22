@@ -1,17 +1,22 @@
 window.onload = function() {
   var images = document.querySelectorAll('.slideshow-image');
+  var slideTexts = document.querySelectorAll('.slide-text');
   var currentImageIndex = 0;
 
   function showNextImage() {
     images[currentImageIndex].classList.remove('active');
+    slideTexts[currentImageIndex].classList.remove('active');
     currentImageIndex = (currentImageIndex + 1) % images.length;
     images[currentImageIndex].classList.add('active');
+    slideTexts[currentImageIndex].classList.add('active');
   }
 
   function showPreviousImage() {
     images[currentImageIndex].classList.remove('active');
+    slideTexts[currentImageIndex].classList.remove('active');
     currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
     images[currentImageIndex].classList.add('active');
+    slideTexts[currentImageIndex].classList.add('active');
   }
 
   function nextSlide() {

@@ -98,6 +98,26 @@ html {
   opacity: 1;
 }
 
+.slide-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  z-index: 2;
+  color: white;
+  opacity: 0;
+  font-size: 48px;
+  font-weight: bold;
+  font-style: italic;
+  text-shadow: 0 0 10px #ffffff; /* Neon glow effect */
+}
+
+.slide-text.active {
+  opacity: 1;
+}
+
 .info {
   font-family: "cambriafnt";
   text-align: center;
@@ -118,6 +138,7 @@ html {
   text-shadow: 0 0 10px #ffffff; /* Neon glow effect */
 }
 
+
 /* Media Queries */
 @media only screen and (max-width: 600px) {
   /* Center arrows on mobile devices */
@@ -130,10 +151,32 @@ html {
   }
 
   .infotext {
-    font-size: 18px;
+    font-size: 24px;
+    font-style: italic;
+    color: #ffffff; /* White color */
+    text-shadow: 0 0 10px #ffffff; /* Neon glow effect */
   }
 
   .infotitle {
-    font-size: 36px;
+    font-size: 48px;
+    font-weight: bold;
+    font-style: italic;
+    color: #ffffff; /* White color */
+    text-shadow: 0 0 10px #ffffff; /* Neon glow effect */
+  }
+  .slide-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    z-index: 2;
+    color: white;
+    opacity: 0;
+    font-size: 24px;
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: 0 0 10px #ffffff; /* Neon glow effect */
   }
 }
