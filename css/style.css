@@ -138,6 +138,12 @@ html {
   text-shadow: 0 0 10px #ffffff; /* Neon glow effect */
 }
 
+.stream {
+  background_color: white;
+  width: 40%;
+  height: 25%;
+  position: relative;
+}
 
 /* Media Queries */
 @media only screen and (max-width: 600px) {
