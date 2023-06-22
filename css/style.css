@@ -101,9 +101,11 @@ html {
 /* Media Queries */
 @media only screen and (max-width: 600px) {
   /* Center arrows on mobile devices */
-  .arrow-left,
+  .arrow-left {
+    left: 15%;
+  }
+
   .arrow-right {
-    left: 50%;
-    transform: translateX(-50%);
+    right: 15%;
   }
 }
